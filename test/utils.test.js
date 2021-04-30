@@ -1,6 +1,8 @@
 var assert = require("assert");
 var utils = require("../lib/utils");
 
+// var lock = "sir";
+
 var mochaAsync = fn => {
   return done => {
     fn.call().then(done, err => {
